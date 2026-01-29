@@ -9,14 +9,12 @@ public class TokenObjectPool : MonoBehaviour
     protected Object[] tokenTypes;
     protected Sprite[] spriteTypes; 
     
-    // Start is called before the first frame update
     void Start()
     {
-        tokenTypes = (Object[])Resources.LoadAll("_Core/Tokens/"); //load all the token prefabs
+        tokenTypes = (Object[])Resources.LoadAll("_Core/Tokens/");
         spriteTypes = Resources.LoadAll<Sprite>("_Core/Images");
     }
     
-    // Update is called once per frame
     void Update()
     {
         
